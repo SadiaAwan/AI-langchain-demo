@@ -1,4 +1,4 @@
-# AI LangChain Agentsw Project
+# AI LangChain Agents Project
 
 This project demonstrates various use cases and functionality in LangChain through practical agent examples.
 Anotherwards each agent has a structures system prompt and solves a specific real-world problem.
