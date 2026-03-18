@@ -1,0 +1,20 @@
+Sadia Awan
+IT-student med intresse för artificiell intelligens och programmering.
+
+Utbildning:
+- Studerar MLOps och maskininlärning
+
+Tekniska färdigheter:
+- Python (grundläggande till medel)
+- Git
+- Grundläggande SQL
+- Grundläggande förståelse för Docker
+
+Projekt:
+- Byggt en enkel chatbot med LangChain
+- Skapat en agent med minne och verktyg
+- Testat att läsa och analysera textfiler med AI
+
+Övrigt:
+- Intresserad av AI-system och automatisering
+- Vill utvecklas inom molntjänster och DevOps

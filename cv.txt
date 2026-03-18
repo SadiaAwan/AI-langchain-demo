@@ -1,0 +1,15 @@
+Sadia Awan
+Junior Backend Developer
+
+Skills:
+Python
+Flask
+REST APIs
+SQL
+Docker
+Git
+
+Experience:
+Built REST APIs using Flask.
+Worked with MySQL databases.
+Containerized applications with Docker.

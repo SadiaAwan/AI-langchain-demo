@@ -1,0 +1,22 @@
+Data Engineer / MLOps Engineer
+
+Vi söker en Data Engineer med fokus på MLOps och maskininlärning.
+
+Krav:
+- Erfarenhet av Python
+- Kunskap om Docker och containerisering
+- Erfarenhet av molntjänster (AWS eller Azure)
+- Förståelse för CI/CD
+- Erfarenhet av databaser (SQL)
+- Erfarenhet av versionshantering (Git)
+
+Meriterande:
+- Erfarenhet av Kubernetes
+- Erfarenhet av MLflow eller liknande verktyg
+- Erfarenhet av att deploya ML-modeller i produktion
+
+Arbetsuppgifter:
+- Bygga och underhålla data pipelines
+- Deploya och övervaka ML-modeller
+- Automatisera tränings- och deploy-processer
+- Samarbeta med data scientists och utvecklare

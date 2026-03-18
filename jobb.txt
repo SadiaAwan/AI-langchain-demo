@@ -1,0 +1,12 @@
+Backend Developer
+
+Required Skills:
+Python
+FastAPI or Flask
+SQL
+Docker
+AWS
+
+Nice to have:
+CI/CD
+Microservices
