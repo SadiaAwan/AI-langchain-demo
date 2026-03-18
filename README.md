@@ -22,8 +22,8 @@ the three agents included:
 3. Study Planner Agent
 
 ---
-
-# Agent 1 - CV Match Agent
+ 
+# 🧠 Agent 1 - CV Match Agent
 
 ## Purpose
 Analyzes a CV against a job description and evaluates the match.
