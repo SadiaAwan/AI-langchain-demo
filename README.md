@@ -218,54 +218,54 @@ Detta för demo 3:::::::::::::::::::
 
 
 
-# Multi-Agent System – CV Matchning
+# Multi-Agent System – CV Matching
 
-## 📌 Beskrivning
-Detta projekt implementerar ett multi-agent system för att matcha en användares CV mot relevanta jobb samt ge rekommendationer om utbildning vid behov.
+## 📌 Description
+This project implements a multi-agent system for matching a user's CV with relevant jobs and providing educational recommendations when needed.
 
-Systemet är baserat på ett agentflöde där varje agent har en specifik uppgift. Fokus i projektet är att visa hur ett sådant flöde kan implementeras i kod.
+The system is based on an agent workflow where each agent has a specific responsibility. The goal of this project is to demonstrate how such a flow can be implemented in code.
 
 ---
 
-## 🧠 Arkitektur (Multi-Agent)
+## 🧠 Architecture (Multi-Agent)
 
-Systemet består av fyra agenter:
+The system consists of four agents:
 
 1. **Intake Agent**
-   - Tar emot användarinput (CV, preferenser)
-   - Skapar en strukturerad profil
+   - Receives user input (CV, preferences)
+   - Creates a structured profile
 
 2. **Job Matching Agent**
-   - Matchar profilen mot jobb
-   - Returnerar matchning i procent
+   - Matches the profile with jobs
+   - Returns match percentages
 
 3. **Evaluation Agent**
-   - Avgör om matchningen är tillräckligt bra
-   - Bestämmer om utbildning behövs
+   - Determines if the match quality is sufficient
+   - Decides whether additional training is needed
 
 4. **Recommendation Agent**
-   - Ger slutresultat till användaren
-   - Föreslår jobb eller utbildningar
+   - Provides the final result to the user
+   - Suggests jobs or educational resources
 
 ---
 
 ## 🔁 Human-in-the-loop
-Systemet innehåller ett steg där användaren får välja:
+The system includes a step where the user is asked:
 
-> Vill du bli kontaktad? (ja/nej)
+> Do you want to be contacted? (yes/no)
 
-Detta simulerar en verklig interaktion med användaren.
+This simulates real-world user interaction.
 
 ---
 
 ## 🌐 Tools
-Systemet använder ett verktyg:
+The system uses a tool:
 - `search_education()` (stub)
-- Simulerar webbsökning av utbildningar
+- Simulates a web search for educational courses
 
 ---
 
-## 📁 Projektstruktur
+## 📁 Project Structure
 
 ```
 examples/multi_agent_lecture/
@@ -282,15 +282,15 @@ examples/multi_agent_lecture/
 
 ---
 
-## ▶️ Hur man kör projektet
+## ▶️ How to Run the Project
 
-1. Gå till projektets root-mapp:
+1. Navigate to the project root folder:
 
 ```bash
 cd AI-langchain-demo
 ```
 
-2. Kör systemet:
+2. Run the system:
 
 ```bash
 python -m examples.multi_agent_lecture.run_system
@@ -298,30 +298,30 @@ python -m examples.multi_agent_lecture.run_system
 
 ---
 
-## 💡 Exempel på output
+## 💡 Example Output
 
 ```
-🧠 Supervisor startar systemet...
+🧠 Supervisor starting system...
 
-📥 Intake Agent körs...
-🔍 Job Matching Agent körs...
-⚖️ Evaluation Agent körs...
-📢 Recommendation Agent körs...
+📥 Intake Agent running...
+🔍 Job Matching Agent running...
+⚖️ Evaluation Agent running...
+📢 Recommendation Agent running...
 
-Vill du bli kontaktad? (ja/nej):
+Do you want to be contacted? (yes/no):
 ```
 
 ---
 
-## ⚙️ Teknik
+## ⚙️ Technologies
 
 - Python
-- Modulbaserad arkitektur
-- Multi-agent designmönster
+- Modular architecture
+- Multi-agent design pattern
 
 ---
 
-## 📊 Flödesdiagram
+## 📊 Flow Diagram
 
 ```
 User Input
@@ -339,24 +339,24 @@ Human in the loop
 END
 ```
 
-(Bifoga även diagram som PNG i inlämningen)
+(Attach the diagram as a PNG file in your submission)
 
 ---
 
-## 🚀 Syfte
+## 🚀 Purpose
 
-Syftet med projektet är att:
-- Förstå multi-agent arkitektur
-- Implementera agentflöde i kod
-- Visa hur olika komponenter samverkar
+The purpose of this project is to:
+- Understand multi-agent architecture
+- Implement agent workflows in code
+- Demonstrate interaction between system components
 
 ---
 
 ## 📎 GitHub
 
-👉 Lägg din GitHub-länk här
+👉 Add your GitHub repository link here
 
 ---
 
-## 👤 Författare
-Studentprojekt – Multi-agent system
+## 👤 Author
+Student project – Multi-agent system
