@@ -511,6 +511,44 @@ async def handle_stream_async(
 # ---------------------------------------------------------------------------
 
 
+def handle_structured_stream(
+    chunks: Union[Iterator[Any], AsyncIterator[Any]],
+    agent_name: Optional[str] = None,
+) -> Any:
+    """Like handle_stream, but also captures and returns the structured_response.
+
+    Use this when the agent was created with a ``response_format`` schema.
+    The stream is displayed identically to :func:`handle_stream`; the return
+    value is whatever was stored in ``structured_response`` by the agent.
+    """
+    structured_response: Any = None
+
+    def _intercept_sync(src: Iterator[Any]) -> Iterator[Any]:
+        nonlocal structured_response
+        for mode, data in src:
+            if mode == "updates" and isinstance(data, dict):
+                for update in data.values():
+                    if isinstance(update, dict) and "structured_response" in update:
+                        structured_response = update["structured_response"]
+            yield mode, data
+
+    async def _intercept_async(src: AsyncIterator[Any]) -> AsyncIterator[Any]:
+        nonlocal structured_response
+        async for mode, data in src:
+            if mode == "updates" and isinstance(data, dict):
+                for update in data.values():
+                    if isinstance(update, dict) and "structured_response" in update:
+                        structured_response = update["structured_response"]
+            yield mode, data
+
+    if hasattr(chunks, "__anext__"):
+        handle_stream(_intercept_async(chunks), agent_name=agent_name)  # type: ignore
+    else:
+        handle_stream(_intercept_sync(chunks), agent_name=agent_name)  # type: ignore
+
+    return structured_response
+
+
 def handle_stream_chunks(
     chunks: Iterator[Any],
     agent_name: str = "Agent",

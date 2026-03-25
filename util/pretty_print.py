@@ -280,6 +280,13 @@ def print_interrupt_info(result) -> bool:
     return True
 
 
+def print_section(label: str, color: str = Colors.BRIGHT_BLUE) -> None:
+    """Print a styled section divider with a label."""
+    print(f"\n{Colors.BOLD}{color}{'─' * 60}{Colors.RESET}")
+    print(f"{Colors.BOLD}{color}  {label}{Colors.RESET}")
+    print(f"{Colors.BOLD}{color}{'─' * 60}{Colors.RESET}")
+
+
 def print_goodbye(message: str = "Tack för att du använde agenten!") -> None:
     """Print a goodbye message.
     
