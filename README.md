@@ -204,3 +204,159 @@ python -m examples.agent-lecture.simple_agent
 ```
 
 
+
+
+
+
+Detta för demo 3:::::::::::::::::::
+
+
+
+
+
+
+
+
+
+# Multi-Agent System – CV Matchning
+
+## 📌 Beskrivning
+Detta projekt implementerar ett multi-agent system för att matcha en användares CV mot relevanta jobb samt ge rekommendationer om utbildning vid behov.
+
+Systemet är baserat på ett agentflöde där varje agent har en specifik uppgift. Fokus i projektet är att visa hur ett sådant flöde kan implementeras i kod.
+
+---
+
+## 🧠 Arkitektur (Multi-Agent)
+
+Systemet består av fyra agenter:
+
+1. **Intake Agent**
+   - Tar emot användarinput (CV, preferenser)
+   - Skapar en strukturerad profil
+
+2. **Job Matching Agent**
+   - Matchar profilen mot jobb
+   - Returnerar matchning i procent
+
+3. **Evaluation Agent**
+   - Avgör om matchningen är tillräckligt bra
+   - Bestämmer om utbildning behövs
+
+4. **Recommendation Agent**
+   - Ger slutresultat till användaren
+   - Föreslår jobb eller utbildningar
+
+---
+
+## 🔁 Human-in-the-loop
+Systemet innehåller ett steg där användaren får välja:
+
+> Vill du bli kontaktad? (ja/nej)
+
+Detta simulerar en verklig interaktion med användaren.
+
+---
+
+## 🌐 Tools
+Systemet använder ett verktyg:
+- `search_education()` (stub)
+- Simulerar webbsökning av utbildningar
+
+---
+
+## 📁 Projektstruktur
+
+```
+examples/multi_agent_lecture/
+│
+├── __init__.py
+├── run_system.py
+├── supervisor.py
+├── intake_agent.py
+├── job_agent.py
+├── evaluation_agent.py
+├── recommendation_agent.py
+├── tools.py
+```
+
+---
+
+## ▶️ Hur man kör projektet
+
+1. Gå till projektets root-mapp:
+
+```bash
+cd AI-langchain-demo
+```
+
+2. Kör systemet:
+
+```bash
+python -m examples.multi_agent_lecture.run_system
+```
+
+---
+
+## 💡 Exempel på output
+
+```
+🧠 Supervisor startar systemet...
+
+📥 Intake Agent körs...
+🔍 Job Matching Agent körs...
+⚖️ Evaluation Agent körs...
+📢 Recommendation Agent körs...
+
+Vill du bli kontaktad? (ja/nej):
+```
+
+---
+
+## ⚙️ Teknik
+
+- Python
+- Modulbaserad arkitektur
+- Multi-agent designmönster
+
+---
+
+## 📊 Flödesdiagram
+
+```
+User Input
+   ↓
+Intake Agent
+   ↓
+Job Matching Agent
+   ↓
+Evaluation Agent
+   ↓
+Recommendation Agent
+   ↓
+Human in the loop
+   ↓
+END
+```
+
+(Bifoga även diagram som PNG i inlämningen)
+
+---
+
+## 🚀 Syfte
+
+Syftet med projektet är att:
+- Förstå multi-agent arkitektur
+- Implementera agentflöde i kod
+- Visa hur olika komponenter samverkar
+
+---
+
+## 📎 GitHub
+
+👉 Lägg din GitHub-länk här
+
+---
+
+## 👤 Författare
+Studentprojekt – Multi-agent system
