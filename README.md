@@ -352,11 +352,6 @@ The purpose of this project is to:
 
 ---
 
-## 📎 GitHub
 
-👉 Add your GitHub repository link here
-
----
-
-## 👤 Author
+## 👤 Author -Sadia Awan
 Student project – Multi-agent system
